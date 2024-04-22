@@ -20,5 +20,13 @@ logistica_dados = {
 
 #Transformação do dicionario para dataframe
 df = pd.DataFrame(logistica_dados)
-#df.head
+#df.head #ok - tudo certo até aqui
+
+#Separar as variaveis em entrada e saida
+X = df[['Peso_Embalagem', 'Tipo_Embalagem']] #entrada
+y = df.Tipo_Produto #saida
+#X.head
+#y.head
+
+
 
