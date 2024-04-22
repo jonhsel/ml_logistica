@@ -18,4 +18,7 @@ logistica_dados = {
     'Tipo_Produto': ['Smartphone', 'Tablet', 'Smartphone', 'Tablet', 'Smartphone', 'Tablet', 'Smartphone', 'Smartphone', 'Tablet', 'Tablet', 'Smartphone', 'Smartphone']
 }
 
+#Transformação do dicionario para dataframe
+df = pd.DataFrame(logistica_dados)
+df.head
 
