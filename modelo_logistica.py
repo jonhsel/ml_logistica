@@ -55,16 +55,16 @@ y_test = le_tipo_produto.transform(y_test)
 
 #criar instancia do classificador
 #================================
-modelo_logistica = DecisionTreeClassifier()
+mdl_logistica = DecisionTreeClassifier()
 
 #Treinar o modelo
 #================
-modelo_logistica.fit(X_train, y_train)
+mdl_logistica.fit(X_train, y_train)
 
 #Fazer a previsão
 #=================
 #a varivavel preditor é criada, usando os dados de X_test, para comparar com o real (y_test)
-y_pred = modelo_logistica.predict(X_test)
+y_pred = mdl_logistica.predict(X_test)
 
 #calcula a acuracia
 #==================
