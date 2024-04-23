@@ -40,4 +40,6 @@ def predict():
     # Renderiza a página inicial com a previsão incluída
     return render_template('template.html', predction = tipo_produto)
 
-
+# App
+if __name__ == '__main__':
+    app.run()
