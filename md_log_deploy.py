@@ -32,13 +32,13 @@ def predict():
     tipo_embalagem = le_tipo_embalagem.transform([request.form['tipo_embalagem']])[0]
 
     # Usa o modelo para fazer uma previsão do tipo do produto com base no peso e tipo de embalagem
-    predction = mdl_logistica.predict([[peso, tipo_embalagem]])[0]
+    prediction = mdl_logistica.predict([[peso, tipo_embalagem]])[0]
     
     # Converte a previsão codificada de volta para o rotulo original
-    tipo_produto = le_tipo_produto.inverse_transform([predction])[0]
+    tipo_produto = le_tipo_produto.inverse_transform([prediction])[0]
 
     # Renderiza a página inicial com a previsão incluída
-    return render_template('template.html', predction = tipo_produto)
+    return render_template('template.html', prediction = tipo_produto)
 
 # App
 if __name__ == '__main__':
