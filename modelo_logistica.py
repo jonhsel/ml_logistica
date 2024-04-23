@@ -52,3 +52,5 @@ X_test['Tipo_Embalagem'] = le_tipo_embalagem.transform(X_test['Tipo_Embalagem'])
 #Aplica a  transformação nos dados de treino e test da variavel tipo_produto
 y_train = le_tipo_produto.transform(y_train)
 y_test = le_tipo_produto.transform(y_test)
+
+#criar instancia do classificador
