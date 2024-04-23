@@ -80,4 +80,10 @@ report = classification_report(y_test, y_pred)
 #imprime o relatorio
 print(report)
 
+#Salva o modelo treinado
+#=======================
+joblib.dump(mdl_logistica, 'modelos/modelo_logistica.plk')
 
+#salva os transformadores
+joblib.dump(le_tipo_embalagem, 'modelos/transformador_tipo_embalagem.plk')
+joblib.dump(le_tipo_produto, 'modelos/transformador_tipo_produto.plk')
