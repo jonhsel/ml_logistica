@@ -32,5 +32,16 @@ y = df.Tipo_Produto #saida
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=1)
 
 
+#Criar e ajustar os transformadores nos dados de treinamento
+
+#criar uma instancia do encoder para fazer o mapeamento de variaveis categoricas de texto para categoricas numericas
+#fit da variavel categorica "tipo embalagem" nos dados de treino
+le_tipo_embalagem = LabelEncoder()
+le_tipo_embalagem.fit(X_train['Tipo_Embalagem'])
+
+#fit da variavel categoria tipo produto nos dados de treino
+le_tipo_produto = LabelEncoder()
+le_tipo_produto.fit(y_train)
+
 
 
