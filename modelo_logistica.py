@@ -70,3 +70,12 @@ y_pred = modelo_logistica.predict(X_test)
 #==================
 modelo_acc_logistica = accuracy_score(y_test, y_pred)
 
+#prints
+print(f'\nAcurácia: ', round(modelo_acc_logistica,2))
+print('Relatório de Classificação\n')
+
+#Obtem o relatorio
+report = classification_report(y_test, y_pred)
+
+#imprime o relatorio
+print(report)
