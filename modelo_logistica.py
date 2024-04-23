@@ -26,7 +26,7 @@ df = pd.DataFrame(logistica_dados)
 X = df[['Peso_Embalagem', 'Tipo_Embalagem']] #entrada
 y = df.Tipo_Produto #saida
 #X.head
-#y.head
+y.head
 
 #Dividir em dados de treino e teste
 #============================================================
@@ -79,3 +79,5 @@ report = classification_report(y_test, y_pred)
 
 #imprime o relatorio
 print(report)
+
+
