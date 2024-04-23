@@ -13,9 +13,9 @@ from sklearn.metrics import classification_report
 
 #Dados dos produtos
 logistica_dados = {
-    'Peso_Embalagem':[198, 698, 144, 712, 212, 700, 208, 205, 225, 711, 723, 225],
-    'Tipo_Embalagem':['Caixa de Papelão', 'Plástico Bolha', 'Caixa de Papelão', 'Plástico Bolha', 'Caixa de Papelão', 'Plástico Bolha', 'Caixa de Papelão', 'Caixa de Papelão',  'Caixa de Papelão', 'Plástico Bolha', 'Plástico Bolha', 'Caixa de Papelão'],
-    'Tipo_Produto': ['Smartphone', 'Tablet', 'Smartphone', 'Tablet', 'Smartphone', 'Tablet', 'Smartphone', 'Smartphone', 'Tablet', 'Tablet', 'Smartphone', 'Tablet']
+    'Peso_Embalagem':[198, 698, 144, 712, 212, 700, 208, 205, 225, 711, 723, 225, 737, 711], 
+    'Tipo_Embalagem':['Caixa de Papelão', 'Plástico Bolha', 'Caixa de Papelão', 'Plástico Bolha', 'Caixa de Papelão', 'Plástico Bolha', 'Caixa de Papelão', 'Caixa de Papelão',  'Caixa de Papelão', 'Plástico Bolha', 'Plástico Bolha', 'Caixa de Papelão', 'Plástico Bolha', 'Plástico Bolha'],
+    'Tipo_Produto': ['Smartphone', 'Tablet', 'Tablet', 'Tablet', 'Smartphone', 'Tablet', 'Smartphone', 'Smartphone', 'Smartphone', 'Tablet', 'Smartphone', 'Smartphone', 'Tablet', 'Tablet']
 }
 
 #Transformação do dicionario para dataframe
