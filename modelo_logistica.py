@@ -56,3 +56,9 @@ y_test = le_tipo_produto.transform(y_test)
 #criar instancia do classificador
 #================================
 modelo_logistica = DecisionTreeClassifier()
+
+#Treinar o modelo
+#================
+modelo_logistica.fit(X_train, y_train)
+
+
